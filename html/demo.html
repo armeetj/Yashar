@@ -8,16 +8,22 @@
     </head>
     <body>
         <div class='header'>
-            <a href='demo.html' class='headerButtons' style='margin-left:20px;'>Home</a>
-            <a href='about.html' class='headerButtons'>About</a>
-            <h1 class='title'>Project Yashar</h1>
+            <a href='demo.html' class='selectedHeaderButton' style='margin-left:20px;'>Home</a>
+            <a href='about.html' class='headerButton'>About</a>
+            <img src='' onload='emotionImage()'>
+            <h1 class='title'>
+                <img id='emotionImage' style='height:40px; width:40px; margin-right: 15px;' src=''></img>
+                Project Yashar
+            </h1>
         </div>
         <div class='paddingContainer'>
             <p>Yashar can detect the emotion of an uploaded image. Try it out:</p>
             <input type='file' id='hiddenUpload' style='display:none;'> <!--hidden real button-->
+            <div style='height:7px;'></div>
             <button id='shownUpload'>UPLOAD <i class='material-icons'>add</i></button>
             <span id='response'>No file chosen</span>
         </div>
-        <script src="main.js"></script>
+        <script src="demo.js"></script>
+        <script src='header.js'></script>
     </body>
 </html>

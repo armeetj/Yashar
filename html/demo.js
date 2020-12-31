@@ -1,5 +1,5 @@
 shownUpload = document.getElementById('shownUpload');
-response = document.getElementById('response')
+response = document.getElementById('response');
 hiddenUpload = document.getElementById('hiddenUpload');
 
 shownUpload.addEventListener('click', () => { //shown button clicked
@@ -7,4 +7,6 @@ shownUpload.addEventListener('click', () => { //shown button clicked
 });
 hiddenUpload.addEventListener('change', () => { //file chosen
     response.innerHTML='File uploaded';
+    shownUpload.style.backgroundColor='#00a42c';
+    shownUpload.innerHTML='UPLOADED';
 });
