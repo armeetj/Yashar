@@ -16,7 +16,16 @@ body {
 .title {
     font-weight: bold;
     font-size: 31px;
-    width:70%;
+    width: 100%;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#emoticon {
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
 }
 .headerButton, .selectedHeaderButton {
     display: inline-block;
@@ -26,6 +35,7 @@ body {
     text-decoration: none;
     color: black;
     cursor: pointer;
+    z-index: 2;
     transition: 0.4s;
 }
 .headerButton {

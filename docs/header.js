@@ -7,11 +7,11 @@ numToURL = [
     'https://static.wixstatic.com/media/7ab48f_533a776f35494d4ea82d913f62bf0368~mv2.png',
     'https://static.wixstatic.com/media/7ab48f_8f83e8453a614023b679dbcf7b9927bd~mv2.png'
 ]
-function emotionImage() {
+function emoticon() {
     randomIndex=Math.floor(Math.random(0)*numToURL.length);
-    img = document.getElementById('emotionImage');
+    img = document.getElementById('emoticon');
     url = numToURL[randomIndex];
     console.log(url);
     img.src=url;
 }
-emotionImage()
+emoticon()
