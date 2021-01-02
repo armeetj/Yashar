@@ -14,48 +14,66 @@ body {
     align-items: center;
 }
 .title {
-    width:80%;
+    font-weight: bold;
+    font-size: 31px;
+    width:70%;
 }
-.headerButtons {
+.headerButton, .selectedHeaderButton {
     display: inline-block;
     margin-left: 20px;
-    background-color: #f9c44d;
     padding: 10px 15px 10px 15px;
     border-radius: 4px;
     text-decoration: none;
     color: black;
     cursor: pointer;
+    transition: 0.4s;
+}
+.headerButton {
+    background-color: #ffd268;
+}
+.selectedHeaderButton {
+    background-color: #dea115
+}
+.headerButton:hover {
+    background-color: #daa52a;
+}
+.selectedHeaderButton:hover {
+    background-color: #c7900f;
 }
 h1 {
     display: flex;
     justify-content: center;
 }
-p {
-    font-size: 19px;
-}
-.name {
-    font-size: 21px;
+p, .name {
+    font-size: 20px;
 }
 .paddingContainer {
-    padding: 20px 230px;
+    padding: 20px 15%;
 }
 #shownUpload {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 
-    padding: 9px 14px;
+    padding: 10px 14px;
     font-size: 15px;
     color: white;
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 45px;
     border-radius: 5px;
     background-color: #1184d1;
     cursor: pointer;
     border: none;
     letter-spacing: 1px;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 #shownUpload:hover {
     background-color: #054ea1;
+}
+#about {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all;
+    transition-duration: 0.9s;
 }

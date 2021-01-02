@@ -5,18 +5,21 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload='aboutAnimation()'>
         <div class='header'>
-            <a href='demo.html' class='headerButtons' style='margin-left:20px;'>Home</a>
-            <a href='about.html' class='headerButtons'>About</a>
-            <h1 class='title'>About the Creators</h1>
+            <a href='demo.html' class='headerButton' style='margin-left:20px;'>Home</a>
+            <a href='about.html' class='selectedHeaderButton'>About</a>
+            <h1 class='title'>
+                <img id='emotionImage' style='height:40px; width:40px; margin-right: 15px;' src=''></img>
+                About the Creators
+            </h1>
         </div>
         <div style='height:40px;'></div>
-        <div class='paddingContainer'>
+        <div class='paddingContainer' id='about'>
             <div style='text-align:center; display:flex; justify-content: space-evenly;'>
                 <div>
                     <a href='https://github.com/ArmeetJatyani'>
-                        <img width=100 src='https://static.wixstatic.com/media/7ab48f_a1de6b80b5f841738aebd4c8d1d4813c~mv2.png'> <!--profile photo-->
+                        <img width=100 src='https://static.wixstatic.com/media/7ab48f_9053b421747949e189a2b239fac12b7c~mv2.png'> <!--profile photo-->
                         <br>
                         <p class='name'>Armeet Jatyani</p>
                     </a>
@@ -38,7 +41,8 @@
             </div>
 
             <div style='height:100px;'></div>
-            <script src='main.js'></script>
+            <script src='about.js'></script>
+            <script src='header.js'></script>
         </div>
     </body>
 </html>
