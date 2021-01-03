@@ -7,8 +7,8 @@ import pickle
 app = Flask(__name__)
 api = Api(app)
 
-# load AI model (pretrained)
-# model = keras.models.load_model('model/model.h5')
+load AI model (pretrained)
+model = keras.models.load_model('model/model.h5')
 
 file = open('model/model.h5', 'r')
 file_data = file.read()
@@ -29,6 +29,9 @@ class Emotions(Resource):
 
         if (str.__contains__(file.filename, ".png") == False) and (str.__contains__(file.filename, ".jpg") == False):
             return {"error": "Files must be of format png or jpg!"}
+
+        # these are placeholder values
+        # TODO: use model.predict() to get emotion values
         return {"angry": 0.1, "disgusted": 0, "fearful": 0, "happy": 0.4, "sad": 0.2, "surprised": 0.3, "neutral": 0}
 
 
